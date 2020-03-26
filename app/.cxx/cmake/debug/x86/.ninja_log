@@ -1,0 +1,13 @@
+# ninja log v5
+29	1326	606679805	CMakeFiles/native-lib.dir/util.cpp.o	ad91a843770b7308
+26	1858	606679806	CMakeFiles/native-lib.dir/clientcode.cpp.o	b7fd863dd0c74bb
+22	2044	606679806	CMakeFiles/native-lib.dir/native-lib.cpp.o	a26f9424ac1d411d
+2045	2283	606679806	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/x86/libnative-lib.so	f793b1f669268bc
+37	1660	606681298	CMakeFiles/native-lib.dir/clientcode.cpp.o	b7fd863dd0c74bb
+1660	2926	606681299	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/x86/libnative-lib.so	f793b1f669268bc
+4	269	606681631	CMakeFiles/native-lib.dir/clientcode.cpp.o	b7fd863dd0c74bb
+269	384	606681631	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/x86/libnative-lib.so	f793b1f669268bc
+3	2157	606682111	CMakeFiles/native-lib.dir/clientcode.cpp.o	b7fd863dd0c74bb
+2157	2496	606682112	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/x86/libnative-lib.so	f793b1f669268bc
+3	4117	606682861	CMakeFiles/native-lib.dir/clientcode.cpp.o	b7fd863dd0c74bb
+4117	5145	606682862	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/x86/libnative-lib.so	f793b1f669268bc

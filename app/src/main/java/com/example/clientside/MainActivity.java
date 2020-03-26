@@ -1,14 +1,18 @@
 package com.example.clientside;
 
 import android.os.AsyncTask;
+import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Example of a call to a native method
 
+        createDownloadsFolder();
+
         consoleText = findViewById(R.id.consoleView);
         consoleText.setMovementMethod(new ScrollingMovementMethod());
         consoleText.setText("");
@@ -45,6 +51,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    private void createDownloadsFolder() {
+        Log.d("PATHSTUFF", Environment.getExternalStorageDirectory().getPath());
+        String dirpath = Environment.getExternalStorageDirectory().getPath() + "/ClusterCreate";
+
+        File directory = new File(dirpath);
+
+        if(!directory.exists())
+            directory.mkdir();
     }
 
     /**

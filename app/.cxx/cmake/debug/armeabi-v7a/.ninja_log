@@ -1,0 +1,17 @@
+# ninja log v5
+31	1081	606683820	CMakeFiles/native-lib.dir/util.cpp.o	1b858ad73632398
+23	1388	606683821	CMakeFiles/native-lib.dir/native-lib.cpp.o	a96a136f2f6339e3
+156	1413	606683821	CMakeFiles/native-lib.dir/clientcode.cpp.o	a2e62c2ace0b1f40
+1413	2514	606683822	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	65d82213cd23d44d
+3	237	606684455	CMakeFiles/native-lib.dir/clientcode.cpp.o	a2e62c2ace0b1f40
+237	486	606684455	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	65d82213cd23d44d
+11	342	606691252	CMakeFiles/native-lib.dir/clientcode.cpp.o	a2e62c2ace0b1f40
+342	766	606691252	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	65d82213cd23d44d
+3	245	606692668	CMakeFiles/native-lib.dir/clientcode.cpp.o	a2e62c2ace0b1f40
+246	513	606692669	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	65d82213cd23d44d
+7	309	606696474	CMakeFiles/native-lib.dir/clientcode.cpp.o	a2e62c2ace0b1f40
+309	644	606696474	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	65d82213cd23d44d
+3	449	606697806	CMakeFiles/native-lib.dir/clientcode.cpp.o	a2e62c2ace0b1f40
+450	895	606697807	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	65d82213cd23d44d
+3	290	606698031	CMakeFiles/native-lib.dir/clientcode.cpp.o	a2e62c2ace0b1f40
+290	456	606698031	C:/Users/karan/AndroidStudioProjects/ClientSide/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	65d82213cd23d44d
