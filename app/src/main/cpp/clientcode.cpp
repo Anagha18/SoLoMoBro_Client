@@ -86,7 +86,9 @@ int exec_file(const char *path, const char *output_path) {
     int stderr_fd = dup(2);
     dup2(op_fd, 1);
     dup2(op_fd, 2);
+    log_output("calling main\n");
     int retval = client_mainfunc();
+    log_output("called main\n");
     dlclose(client_code);
     close(op_fd);
     dup2(stdout_fd, 1);
@@ -98,14 +100,10 @@ int exec_file(const char *path, const char *output_path) {
 
 int mainfunc(const char *ip) {
 
-    if (chdir("/sdcard/ClusterCreate") == -1) {
+    if (chdir("/data/data/com.example.clientside") == -1) {
         log_output("Error setting working directory\n");
         return -1;
     }
-
-//    log_output("system call: %d\n", system("./testcode_arm.out > testcode_arm_op.txt"));
-//    log_output("libpath: %s\n", getenv("LD_LIBRARY_PATH"));
-//    exec_file("./testcode_arm.so", "testcode_arm_op.txt");
 
     setbuf(stdout, NULL);
     int clientSocket, ret;

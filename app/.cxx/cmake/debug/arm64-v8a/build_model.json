@@ -165,7 +165,6 @@
       "project": {
         "compilerSettingsCacheFolder": "C:\\Users\\karan\\AndroidStudioProjects\\ClientSide\\.cxx",
         "cxxFolder": "C:\\Users\\karan\\AndroidStudioProjects\\ClientSide\\.cxx",
-        "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
@@ -188,8 +187,10 @@
     "objFolder": "C:\\Users\\karan\\AndroidStudioProjects\\ClientSide\\app\\build\\intermediates\\cmake\\debug\\obj",
     "variantName": "debug",
     "validAbiList": [
+      "ARMEABI_V7A",
       "ARM64_V8A",
-      "ARMEABI_V7A"
+      "X86",
+      "X86_64"
     ]
   }
 }
