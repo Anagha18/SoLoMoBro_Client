@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     AsyncTask task = null;
-    TextView consoleText;
+    static TextView consoleText;
     EditText editText;
 
     @Override
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
     public native void cppMainFunc();
 
-    public void log_output(String output) {
+    public static void log_output(String output) {
 //        tv.append("\n");
 //        tv.append(output);
         String st = consoleText.getText().toString();

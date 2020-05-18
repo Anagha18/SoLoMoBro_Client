@@ -10,6 +10,7 @@
 
 extern JNIEnv *print_env;
 extern jobject print_ob;
+extern JavaVM *g_VM;
 void log_output(const char *fmtstring, ...);
 
 

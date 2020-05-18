@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include "util.h"
 
+
 void log_output(const char *fmtstring, ...)
 {
     char *s = (char *) malloc(100 * sizeof(char));
@@ -15,12 +16,17 @@ void log_output(const char *fmtstring, ...)
 
     LOGD("%s", s);
 
+    LOGD("g_VM: %p\n", g_VM);
+    g_VM->GetEnv((void **)&print_env, JNI_VERSION_1_6);
+    g_VM->AttachCurrentThread(&print_env, NULL);
+    LOGD("print_env: %p\n", print_env);
     print_env->ExceptionClear();
-    jclass activityClass=print_env->GetObjectClass(print_ob);
-    jmethodID methodId=print_env->GetMethodID(activityClass, "log_output", "(Ljava/lang/String;)V");
+    jclass activityClass=print_env->FindClass("com/example/clientside/MainActivity");
+    jmethodID methodId=print_env->GetStaticMethodID(activityClass, "log_output", "(Ljava/lang/String;)V");
 
     jstring st = print_env->NewStringUTF(s);
-    print_env->CallVoidMethod(print_ob, methodId, st);
+    print_env->CallStaticVoidMethod(activityClass, methodId, st);
+
 
     free(s);
 }

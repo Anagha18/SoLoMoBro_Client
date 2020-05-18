@@ -3,11 +3,13 @@
 #include <android/log.h>
 #include <unistd.h>
 
-#include "clientcode.h"
+//#include "clientcode.h"
+#include "ClusterCreate.h"
 #include "util.h"
 
 JNIEnv *print_env;
 jobject print_ob;
+JavaVM *g_VM;
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_example_clientside_MainActivity_stringFromJNI(
@@ -36,8 +38,11 @@ Java_com_example_clientside_MainActivity_connectSocket(JNIEnv *env, jobject inst
 
     print_env = env;
     print_ob = instance;
+    env->GetJavaVM(&g_VM);
 
-    mainfunc(ip);
+    // mainfunc(ip);
+
+    runclient(ip, 8080);
 
     env->ReleaseStringUTFChars(ip_, ip);
 }
